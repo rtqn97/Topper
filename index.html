@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Once Upon a Typing Heart — Visual Diary</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Background orbs / particles -->
+  <div class="sky">
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+    <div class="particles" aria-hidden="true"></div>
+  </div>
+
+  <!-- Main container -->
+  <main id="app">
+    <header class="title">
+      <h1>Once Upon a Typing Heart</h1>
+      <p class="subtitle">A short visual diary — soft, uncertain, luminous.</p>
+    </header>
+
+    <section id="scene" class="scene">
+      <!-- Content is injected by script.js -->
+      <div id="content" class="content" aria-live="polite"></div>
+      <div id="photos" class="photos" aria-hidden="true"></div>
+    </section>
+
+    <nav class="controls">
+      <button id="prevBtn" class="btn secondary" aria-label="Previous scene">◀ Prev</button>
+      <button id="nextBtn" class="btn primary" aria-label="Next scene">Next ▶</button>
+    </nav>
+
+    <footer class="foot">
+      <small id="progress">Scene 1 / 8</small>
+      <label class="music-toggle">
+        <input id="musicToggle" type="checkbox" />
+        <span>Music</span>
+      </label>
+    </footer>
+  </main>
+
+  <!-- optional ambient music (add your file later in the src attribute) -->
+  <audio id="bgMusic" loop preload="auto">
+    <!-- Example: <source src="music/soft-guitar-loop.mp3" type="audio/mpeg"> -->
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+      </html>
